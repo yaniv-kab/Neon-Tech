@@ -1,0 +1,205 @@
+main{
+  min-height: 80vh;
+}
+h3{
+  padding: 1rem 0;
+}
+h2{
+  font-size: 1.4rem;
+  padding: 0.5rem 0 ;
+}
+h1{
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+.rating span{
+  margin: 0.1rem;
+}
+.brand{
+  font-size: 2.5rem;
+  animation: pulsate 2s infinite alternate;
+}
+.brand_body{
+  font-size: 18px;
+  font-family:"Yellowtail", sans-serif ;
+  background-color: #010a01;
+  background-image: url("https://cdn.pixabay.com/photo/2017/02/12/12/42/wall-2059909_640.png")
+}
+.hot{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #171717;
+}
+
+.nav_cart{
+  animation: pulsate 3s infinite alternate;
+}
+.nav_profile{
+  animation: pulsate 4s infinite alternate;
+}
+.nav_admin{
+  animation: pulsate 5s infinite alternate;
+}
+@import url(https://fonts.googleapis.com/css?family=Cabin:400);
+
+.webdesigntuts-workshop {
+	position:unset;
+}
+
+.webdesigntuts-workshop input {
+	background: #222;	
+	background: linear-gradient(#333, #222);	
+	border: 1px solid #444;
+	border-radius: 5px 0 0 5px;
+	box-shadow: 0 2px 0 #000;
+	color: #888;
+	display: block;
+	float: left;
+	font-size: 14px;
+	font-weight: 400;
+	height: 40px;
+	padding: 0 10px;
+	text-shadow: 0 -1px 0 #000;
+	width: 200px;
+}
+
+.ie .webdesigntuts-workshop input {
+	line-height: 40px;
+}
+
+.webdesigntuts-workshop input::-webkit-input-placeholder {
+   color: #888;
+}
+
+.webdesigntuts-workshop input:-moz-placeholder {
+   color: #888;
+}
+
+.webdesigntuts-workshop input:focus {
+	animation: glow 1s ease-out infinite alternate;
+	background: #222922;
+	background: linear-gradient(#333933, #222922);
+	border-color: #3E00FF;
+	box-shadow: 0 0 5px rgba(0, 110, 255, 0.2), inset 0 0 5px rgba(0, 110, 255, 0.1), 0 2px 0 #000;
+	color: #efe;
+	outline: none;
+}
+
+.webdesigntuts-workshop input:focus::-webkit-input-placeholder { 
+	color: #efe;
+}
+
+.webdesigntuts-workshop input:focus:-moz-placeholder {
+	color: #efe;
+}
+
+.webdesigntuts-workshop button {
+	background: #222;
+	background: linear-gradient(#333, #222);
+	box-sizing: border-box;
+	border: 1px solid #444;
+	border-left-color: #000;
+	border-radius: 0 5px 5px 0;
+	box-shadow: 0 2px 0 #000;
+	color: #fff;
+	display: block;
+	font-family: 'Cabin', helvetica, arial, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	height: 40px;
+	line-height: 40px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	text-shadow: 0 -1px 0 #000;
+	width: 80px;
+}	
+
+.webdesigntuts-workshop button:hover,
+.webdesigntuts-workshop button:focus {
+	background: #292929;
+	background: linear-gradient(#393939, #292929);
+	color: rgb(64, 137, 255);
+	outline: none;
+}
+
+.webdesigntuts-workshop button:active {
+	background: #292929;
+	background: linear-gradient(#393939, #292929);
+	box-shadow: 0 1px 0 #000, inset 1px 0 1px #222;
+	top: 1px;
+}
+
+@keyframes glow {
+    0% {
+		border-color: #1E3163;
+		box-shadow: 0 0 10px rgba(0, 89, 255, 0.2), inset 0 0 10px rgba(0, 89, 255, 0.1), 0 3px 0 #000;
+    }	
+    100% {
+		border-color: #3E00FF;
+		box-shadow: 0 0 20px rgba(0, 89, 255, 0.6), inset 0 0 20px rgba(0, 89, 255, 0.4), 0 3px 0 #000;
+    }
+}
+
+@keyframes pulsate {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100%{
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #5271ff,
+      0 0 80px #5271ff,
+      0 0 90px #5271ff,
+      0 0 100px #5271ff,
+      0 0 150px #5271ff;
+  
+  }
+    20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+  0%{        
+      text-shadow:
+      0 0 4px #fff,
+      0 0 10px #fff,
+      0 0 18px #fff,
+      0 0 38px #5271ff,
+      0 0 73px #5271ff,
+      0 0 80px #5271ff,
+      0 0 94px #5271ff,
+      0 0 140px #5271ff;
+  }   
+}
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active{
+  display: flex;
+}
+.carousel-caption{
+  position: absolute;
+  top: -15px;
+}
+
+.carousel-caption h2{
+  color: white;
+}
+.carousel-img {
+  height: 400px;
+  padding: 20px;
+  margin: 60px;
+}
+.carousel a {
+  margin: 0 auto;
+}
+/* .neonStyled{
+  text-shadow:
+      0 0 7px rgb(0, 255, 200),
+      0 0 10px rgb(0, 255, 200),
+      0 0 21px rgb(0, 255, 200),
+      0 0 42px rgb(0, 255, 200),
+      0 0 82px rgb(0, 255, 200),
+      0 0 92px rgb(0, 255, 200),
+      0 0 102px rgb(0, 255, 200),
+      0 0 151px rgb(0, 255, 200);
+    }  */
+    
