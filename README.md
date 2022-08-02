@@ -4,7 +4,7 @@
 
 ## Website
 
-http://neontech.site
+http://neon-tech.herokuapp.com
 
 ## Features
 
