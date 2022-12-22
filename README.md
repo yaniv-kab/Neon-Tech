@@ -4,7 +4,7 @@
 
 ## Website
 
-http://neon-tech.herokuapp.com
+https://neon-tech.netlify.app
 
 ## Features
 
