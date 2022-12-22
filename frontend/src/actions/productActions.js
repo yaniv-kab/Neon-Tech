@@ -22,13 +22,14 @@ import {
     PRODUCT_TOP_FAIL
 } from "../constants/productConstants"
 import axios from 'axios'
+const API_URL = "https://neon-tech.onrender.com"
 
 
 export const listProducts = (keyword = '', pageNumber = '') => async (dispatch) => {
     try {
         dispatch({ type: PRODUCT_LIST_REQUEST })
 
-        const { data } = await axios.get(`/api/products?keyword=${keyword}&pageNumber=${pageNumber}`)
+        const { data } = await axios.get(`${API_URL}/api/products?keyword=${keyword}&pageNumber=${pageNumber}`)
 
         dispatch({
             type: PRODUCT_LIST_SUCCESS,
@@ -47,7 +48,7 @@ export const listProductsDetails = (id) => async (dispatch) => {
     try {
         dispatch({ type: PRODUCT_DETAILS_REQUEST })
 
-        const { data } = await axios.get(`/api/products/${id}`)
+        const { data } = await axios.get(`${API_URL}/api/products/${id}`)
 
         dispatch({
             type: PRODUCT_DETAILS_SUCCESS,
@@ -76,7 +77,7 @@ export const deleteProduct = (id) => async (dispatch, getState) => {
             }
         }
 
-        await axios.delete(`/api/products/${id}`, config)
+        await axios.delete(`${API_URL}/api/products/${id}`, config)
 
         dispatch({
             type: PRODUCT_DELETE_SUCCESS,
@@ -105,7 +106,7 @@ export const createProduct = () => async (dispatch, getState) => {
             }
         }
 
-        const { data } = await axios.post(`/api/products/`, {}, config)
+        const { data } = await axios.post(`${API_URL}/api/products/`, {}, config)
 
         dispatch({
             type: PRODUCT_CREATE_SUCCESS,
@@ -135,7 +136,7 @@ export const updateProduct = (product) => async (dispatch, getState) => {
             }
         }
 
-        const { data } = await axios.put(`/api/products/${product._id}`, product, config)
+        const { data } = await axios.put(`${API_URL}/api/products/${product._id}`, product, config)
 
         dispatch({
             type: PRODUCT_UPDATE_SUCCESS,
@@ -165,7 +166,7 @@ export const createProductReview = (productId, review) => async (dispatch, getSt
             }
         }
 
-        await axios.post(`/api/products/${productId}/reviews`, review, config)
+        await axios.post(`${API_URL}/api/products/${productId}/reviews`, review, config)
 
         dispatch({
             type: PRODUCT_CREATE_REVIEW_SUCCESS
@@ -185,7 +186,7 @@ export const listTopProducts = () => async (dispatch) => {
     try {
         dispatch({ type: PRODUCT_TOP_REQUEST })
 
-        const { data } = await axios.get(`/api/products/top`)
+        const { data } = await axios.get(`${API_URL}/api/products/top`)
 
         dispatch({
             type: PRODUCT_TOP_SUCCESS,
