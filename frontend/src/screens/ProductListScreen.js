@@ -7,7 +7,6 @@ import Loader from '../components/Loader'
 import Paginate from '../components/Paginate'
 import { listProducts, deleteProduct, createProduct } from '../actions/productActions'
 import { PRODUCT_DELETE_RESET, PRODUCT_CREATE_RESET } from '../constants/productConstants'
-import { set } from 'mongoose'
 const ProductListScreen = ({ history, match }) => {
     const [deleteSucceded, setDeleteSucceded] = useState(false)
     const pageNumber = match.params.pageNumber || 1
