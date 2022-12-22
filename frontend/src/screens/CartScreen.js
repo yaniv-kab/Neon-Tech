@@ -34,7 +34,7 @@ const CartScreen = ({ match, location, history }) => {
                             <ListGroup.Item key={item.product}>
                                 <Row>
                                     <Col md={2}>
-                                        <Image src={item.image} alt={item.name} fluid rounded />
+                                        <Image src={`https://neon-tech.onrender.com${item.image}`} alt={item.name} fluid rounded />
                                     </Col>
                                     <Col md={2}>
                                         <Link to={`/product/${item.product}`}>{item.name}</Link>
