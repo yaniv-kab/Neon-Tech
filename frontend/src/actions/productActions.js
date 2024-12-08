@@ -22,7 +22,7 @@ import {
     PRODUCT_TOP_FAIL
 } from "../constants/productConstants"
 import axios from 'axios'
-const API_URL = "http://localhost:5000"
+const API_URL = "https://web-production-d618.up.railway.app"
 
 
 export const listProducts = (keyword = '', pageNumber = '') => async (dispatch) => {
