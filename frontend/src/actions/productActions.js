@@ -22,7 +22,7 @@ import {
     PRODUCT_TOP_FAIL
 } from "../constants/productConstants"
 import axios from 'axios'
-const API_URL = "https://neon-tech.onrender.com"
+const API_URL = "http://localhost:5000"
 
 
 export const listProducts = (keyword = '', pageNumber = '') => async (dispatch) => {

@@ -20,7 +20,7 @@ const ProductCarousel = () => {
             {products.map((product, i) => (
                 <Carousel.Item key={product._id} id={i}>
                     <Link to={`/product/${product._id}`}>
-                        <Image className='carousel-img' src={`https://neon-tech.onrender.com${product.image}`} alt={product.name} fluid />
+                        <Image className='carousel-img' src={`https://web-production-d618.up.railway.app/${product.image}`} alt={product.name} fluid />
                         <Carousel.Caption className='carousel-caption'>
                             <h2>{product.name} (${product.price})</h2>
                         </Carousel.Caption>

@@ -76,7 +76,7 @@ const PlaceOrderScreen = ({ history }) => {
                                         <ListGroup.Item key={index}>
                                             <Row>
                                                 <Col md={1}>
-                                                    <Image src={`https://neon-tech.onrender.com${item.image}`} alt={item.name} fluid rounded />
+                                                    <Image src={`https://web-production-d618.up.railway.app/${item.image}`} alt={item.name} fluid rounded />
                                                 </Col>
                                                 <Col>
                                                     <Link to={`/product/${item.product}`}>

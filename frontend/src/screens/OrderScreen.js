@@ -42,7 +42,7 @@ const OrderScreen = ({ match, history }) => {
             history.push('/login')
         }
         const addPayPalScript = async () => {
-            const { data: clientId } = await axios.get('https://neon-tech.onrender.com/api/config/paypal')
+            const { data: clientId } = await axios.get('https://web-production-d618.up.railway.app/api/config/paypal')
             const script = document.createElement('script')
             script.type = 'text/javascript'
             script.src = `https://www.paypal.com/sdk/js?client-id=${clientId}`
@@ -111,7 +111,7 @@ const OrderScreen = ({ match, history }) => {
                                         <ListGroup.Item key={index}>
                                             <Row>
                                                 <Col md={1}>
-                                                    <Image src={`https://neon-tech.onrender.com${item.image}`} alt={item.name} fluid rounded />
+                                                    <Image src={`https://web-production-d618.up.railway.app/${item.image}`} alt={item.name} fluid rounded />
                                                 </Col>
                                                 <Col>
                                                     <Link to={`/product/${item.product}`}>

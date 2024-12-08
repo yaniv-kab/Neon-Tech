@@ -27,7 +27,7 @@ import {
 } from '../constants/userConstants'
 import { ORDER_LIST_MY_RESET } from '../constants/orderConstants'
 import { CART_RESET, CART_RESET_SHIPPING_ADDRESS } from '../constants/cartConstants'
-const API_URL = "https://neon-tech.onrender.com"
+const API_URL = "https://web-production-d618.up.railway.app"
 
 export const login = (email, password) => async (dispatch) => {
     try {

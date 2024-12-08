@@ -20,7 +20,7 @@ import {
 } from '../constants/orderConstants'
 import axios from 'axios'
 import { CART_RESET } from '../constants/cartConstants'
-const API_URL = "https://neon-tech.onrender.com"
+const API_URL = "https://web-production-d618.up.railway.app"
 
 export const createOrder = (order) => async (dispatch, getState) => {
     try {

@@ -7,7 +7,7 @@ const Product = ({ product }) => {
     return (
         <Card style={{ height: "90%", borderBottom: 'solid', borderTop: 'white', borderRight: 'white', borderLeft: 'white' }} className="grid my-3 p-3 rounded">
             <Link to={`/product/${product._id}`}>
-                <Card.Img className='rounded' src={`https://neon-tech.onrender.com${product.image}`} variant='top' />
+                <Card.Img className='rounded' src={`https://web-production-d618.up.railway.app/${product.image}`} variant='top' />
             </Link>
             <Card.Body>
                 <Link to={`/product/${product._id}`}>

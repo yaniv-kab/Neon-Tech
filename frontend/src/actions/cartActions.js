@@ -1,6 +1,6 @@
 import axios from "axios"
 import { CART_ADD_ITEM, CART_REMOVE_ITEM, CART_SAVE_SHIPPING_ADDRESS, CART_SAVE_PAYMENT_METHOD } from "../constants/cartConstants"
-const API_URL = "https://neon-tech.onrender.com"
+const API_URL = "https://web-production-d618.up.railway.app"
 export const addToCart = (id, qty) => async (dispatch, getState) => {
     const { data } = await axios.get(`${API_URL}/api/products/${id}`)
 
